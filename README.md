@@ -1,0 +1,2 @@
+# wild
+clickhouse load scripts
