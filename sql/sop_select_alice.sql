@@ -4,8 +4,7 @@ set ansi_nulls on;
 set ansi_padding on;
 
 set transaction isolation level read uncommitted;
-select
-top _rows_
+select top _rows_
   sop_chg_id
 , shk_id
 , cast(dt as datetime2(0)) as dt
