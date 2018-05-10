@@ -1,2 +1,2 @@
-exec WBR_ERP.WarehouseReader.ShkStateChange_Get @rows=_100_,@lb=_sop_pb_,@le=_sop_pe_
+exec WBR_ERP.WarehouseReader.ShkStateChange_Get @rows=_rows_,@lb=_lb_,@le=_le_
 
