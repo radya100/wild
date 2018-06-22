@@ -28,7 +28,7 @@ export end_ss=$(date +%s%3N)
 
 #Логирование загрузки
 export row=$(clickhouse-client --query="select count(1) from ShkOnPlaceChange where sop_chg_id>$lb")
-export log_sql="insert into load_log(table_id, pb, event_date, rows, sec, sec_opt, msg) values(3, '$pb', '$(date -I)', $row, $(($begin_ss_opt-$begin_ss)), $(($end_ss-$begin_ss_opt)), '$msg')"
+export log_sql="insert into load_log(table_id, pb, event_date, rows, sec, sec_opt, msg) values(4, '$pb', '$(date -I)', $row, $(($begin_ss_opt-$begin_ss)), $(($end_ss-$begin_ss_opt)), '$msg')"
 clickhouse-client -u $user_ch --password $pas_ch --query="$log_sql"
 
 #printf "$insert_sql"
