@@ -1,0 +1,30 @@
+CREATE TABLE default.stage_slc(
+log_id Int64
+, shk_id Int64
+, employee_id UInt64
+, dt DateTime
+, dt_date Date
+, office_id UInt64
+, lostreason_id UInt16
+, is_manual Int8
+, is_deleted Int8
+, storage_id UInt64
+, price_100 Int64
+, is_manual_price Int8
+, supplier_id UInt64
+, person_id UInt64
+, new_shk_id Int64
+, reason_descr String
+, contract_num String
+, currency_id UInt64
+, price_ru_100 Int64
+, suppliercontract_id UInt64
+, doc_num_1C String
+, doc_dt_1C DateTime
+, place_cod UInt64
+, upload_1C_task_id UInt64
+, proc_name String
+, proc_name_context String
+, outstaff_person_id UInt64
+, is_updated Int8
+) ENGINE = Memory
